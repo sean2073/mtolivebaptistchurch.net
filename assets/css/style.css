@@ -5,10 +5,11 @@ html{
 }
 
 #top, #home-p2, #home-p3, #footer {
+    /*
+    width: 930px;
+    position: absolute;
     
-    
-    
-
+*/
 	
 }
 .container{
@@ -29,6 +30,8 @@ html{
     color: #ffffff;
     border-top: 3px solid #222;
     border-bottom: 24px solid #634d4d;
+    border-bottom: 24px solid #800020;
+    
     
     
     
@@ -99,15 +102,18 @@ html{
 #home-p2, #home-p3
 { 
     
-   
+    
    /* 
-   position: absolute;
+   
     width: 930px; 
    margin-left: 10px;
     margin-right: 10px;*/
     color: #ffffff;
     color: #222;
     
+}
+#home-p2{
+    height:545px;
 }
 #home-text{
     clear: both;
@@ -123,4 +129,21 @@ html{
 #logo{
     margin-top: 45px;
     margin-left: 20px;
+}
+#about-main-section{
+    
+}
+.footer-link, .footer-p{
+    font-size: 15px;
+}
+
+div#foot-nav{
+    
+    margin-top: 40px;
+   /* margin-left: 10px;*/
+    
+}*/
+#social-media{
+    margin-left: 20px;
+    margin-top: 20px;
 }
