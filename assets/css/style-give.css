@@ -9,6 +9,10 @@
   
     
 }   
+.give-p{
+    color: white;
+}
+    
 #section-1{
     
     
@@ -23,12 +27,11 @@
     
 }   
 #section-2{
-    position: relative;
-    margin-left: 10px;
-    margin-right: 10px;
+    
+   
 }
 #section-3{
-    margin-left: 10px;
-    margin-right: 10px;
+    
+    
     border: 1px solid black;
 }

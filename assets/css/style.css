@@ -24,6 +24,7 @@ p{
 }
 .container{
     width:960px;
+    /*max-width: 500px;*/
     max-width: 500px;
     margin: auto;
 
@@ -104,7 +105,13 @@ div#foot-nav{
     margin-left: 20px;
 }
 .responsive{
-    max-width: 100%;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+.responsive2{
+    width: 100%;
+    max-width: 200px;
     height: auto;
   }
 #scripture{
@@ -112,7 +119,8 @@ div#foot-nav{
     color: goldenrod;
     font-family: 'Times New Roman', Times, serif;
     margin-top: 5px;
-    font-size: 18px;
+    font-size: 2vw;
+    font-size: 15px;
 }
 #script-list{
     list-style: none;
@@ -153,8 +161,9 @@ div#foot-nav{
     
 }
 #home-p2{
-   height:545px; 
-    
+   height: 400px; 
+   /*margin: 0;
+   padding: 0; */
 }
 #home-p3{
     background-color: #e6c8c8;
@@ -164,6 +173,7 @@ div#foot-nav{
     color: #770f12;
     color: #4a090b;
     border: 4px solid #e1cfd8;
+    
 }
 #home-text{
     clear: both;
@@ -180,5 +190,42 @@ div#foot-nav{
 #about-main-section{
     
 }
+@media screen and (max-width: 767px) {
+    .responsive{
+        width: 100%;
+        max-width: 310px;
+        height: auto;
 
+    }
+    .nav-link{
+        font-size: medium;
+    }
+    #nav{
+   
+        margin-top: 100px;
+        margin-left: 158px;
+        width: 350px;
+        
+    }
+}
 
+@media screen and (max-width: 639px) {
+    .responsive{
+        width: 100%;
+        max-width: 210px;
+        height: auto;
+
+    }
+    .nav-link{
+        font-size: small;
+    }
+    #nav{
+   
+        margin-top: 30px;
+        margin-left: 168px;
+        
+    }
+    #scripture{
+        font-size: 10px;
+    }
+}
