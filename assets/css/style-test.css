@@ -1,0 +1,266 @@
+:root{
+   --orange: #fd7e14;
+   --prayer-winfdow-background: #f3c24e;
+   --burgundy: #800020;
+   --footer-background: #404040;
+   --footer-border-bottom: #634d4d;
+   --upcoming-events-font: #4a090b;
+   --scripture-font: goldenrod;
+   --font-color: #222;
+   --grey: #ededed;
+   --events-background-color: #e0d9dd ;
+}
+
+
+*/
+html{
+    width: 960px;
+    margin: 0 auto;
+    
+}
+/*  ADDING THE BELOW p TAG STYLES GOT RID OF THE GAP BETWEEN MY DIVS
+*/
+p{
+    margin: 0;
+    padding: 0.5em 1em;
+    
+}
+/*************************************************************/
+.display-3, .display-4,.info{
+    text-align: center;
+} 
+#top, #home-p2, #home-p3, #footer {
+    /*
+    width: 930px;
+    position: absolute;
+    
+*/
+	
+}
+.container{
+    width:960px;
+    /*max-width: 500px;*/
+    max-width: 500px;
+    margin: auto;
+
+    
+}
+/********************************************************************
+/***********************************************************************************************************/
+/*  
+/*                       F O O T E R 
+/***********************************************************************************************************/
+/********************************************************************/
+#footer{
+    background-color: #0b76be;
+    background-color: #800020;
+    background-color: #404040;
+    color: #ffffff;
+    border-top: 3px solid #222;
+    border-bottom: 24px solid #634d4d;
+    border-bottom: 24px solid #800020;
+}
+#social-media{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+div#foot-nav{
+    
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 15px;
+   
+}
+.menu-link{
+    font-size: 7px;
+}
+/********************************************************************/
+/***********************************************************************************************************/
+
+
+
+
+
+
+/********************************************************************
+/***********************************************************************************************************/
+/*  
+/*                       T O P   S E C T I O N
+/***********************************************************************************************************/
+/********************************************************************/
+
+#top{
+    /*clear: both;   */
+    
+    
+    background-image: url("../images/mtolive.png");
+    background-image: url("../images/graphic2.png");
+    background-repeat: no-repeat;
+    margin-top: 1px;
+   /* width: 960px; */
+    height: 280px;
+    /* padding-bottom: 50%;
+   
+    
+    height: 600px;*/
+    
+}
+
+#nav{
+   
+    margin-top: 40px;
+    margin-left: 16px;
+    
+}
+.nav-link{
+    font-size: large;
+}
+#logo{
+    margin-top: 45px;
+    margin-left: 20px;
+}
+.responsive{
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+.responsive2{
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  }
+#scripture{
+    color: #ededed;
+    color: goldenrod;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 5px;
+    /*font-size: 2vw;n*/
+    font-size: 25px;
+}
+#script-list{
+    list-style: none;
+}
+/********************************************************************/
+/***********************************************************************************************************/
+
+#mid-section{
+    clear: both;
+    
+    
+    background-image: url("../images/church3.png");
+    background-image: url("../images/36926646916_5eeef40750_o.jpg");
+    background-image: url("../images/18981837903_586eeb43f2_o.jpg");
+    /*background-image: url("../images/church3.png"); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border:1px solid #fff;
+    border:1px solid #000;
+    border:1px solid #fff;
+    height: 400px;
+    
+    width: 100%;
+    
+   /* width: 960px;*/
+}
+
+
+#home-p2, #home-p3
+{ 
+    
+    
+   /* 
+   
+    width: 930px; 
+   margin-left: 10px;
+    margin-right: 10px;*/
+    color: #ffffff;
+    color: #222;
+    
+}
+#home-p2{
+   height: 400px; 
+   /*margin: 0;
+   padding: 0; */
+}
+#home-p3{
+    background-color: #e6c8c8;
+    background-color: #e0cbcb;
+    background-color: #e1cfd8 ;
+    background-color: #e0d9dd ;
+    color: #770f12;
+    color: #4a090b;
+    border: 4px solid #e1cfd8;
+    
+}
+#home-text{
+    clear: both;
+    height: 200px;
+    margin-left: 100px;
+    padding-top:  100px;
+    font-size: 40px;
+    color: #ffffff;
+    /*font-weight: bolder;
+    font-style: unset;*/
+/* margin-top: 80px;color: #0f67b3;*/
+}
+
+#about-main-section{
+    
+}
+/*
+#prayer-window{
+    background-color: #f3c24e;
+    width: 665px;
+    height: 400px;
+}
+#prayer-window.h1{
+    margin-left: 30px;
+}
+#form{
+    margin-left: 15px;
+}
+#exampleTextarea{
+    width: 600px;
+    margin-left: ;
+}
+*/
+@media screen and (max-width: 767px) {
+    .responsive{
+        width: 100%;
+        max-width: 310px;
+        height: auto;
+
+    }
+    .nav-link{
+        font-size: medium;
+    }
+    #nav{
+   
+        margin-top: 100px;
+        margin-left: 158px;
+        width: 350px;
+        
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .responsive{
+        width: 100%;
+        max-width: 210px;
+        height: auto;
+
+    }
+    .nav-link{
+        font-size: small;
+    }
+    #nav{
+   
+        margin-top: 30px;
+        margin-left: 168px;
+        
+    }
+    #scripture{
+        font-size: 10px;
+    }
+}

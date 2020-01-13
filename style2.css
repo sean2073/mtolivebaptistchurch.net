@@ -1,0 +1,15 @@
+#prayer-window{
+    background-color: #f3c24e;
+    width: 665px;
+    height: 400px;
+}
+#prayer-window.h1{
+    margin-left: 30px;
+}
+#form{
+    margin-left: 15px;
+}
+#exampleTextarea{
+    width: 600px;
+    margin-left: ;
+}

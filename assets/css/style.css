@@ -2,6 +2,7 @@ html{
     width: 960px;
     margin: 0 auto;
     
+    
 }
 /*  ADDING THE BELOW p TAG STYLES GOT RID OF THE GAP BETWEEN MY DIVS
 */
@@ -23,10 +24,13 @@ p{
 	
 }
 .container{
+    background-color: transparent;
     width:960px;
     /*max-width: 500px;*/
     max-width: 500px;
     margin: auto;
+    
+   
 
     
 }
@@ -37,6 +41,7 @@ p{
 /***********************************************************************************************************/
 /********************************************************************/
 #footer{
+    clear: both;
     background-color: #0b76be;
     background-color: #800020;
     background-color: #404040;
@@ -77,12 +82,12 @@ div#foot-nav{
 #top{
     /*clear: both;   */
     
-    
+   
     background-image: url("../images/mtolive.png");
     background-image: url("../images/graphic2.png");
     background-repeat: no-repeat;
     margin-top: 1px;
-   /* width: 960px; */
+   /*width: 960px; */
     height: 280px;
     /* padding-bottom: 50%;
    
@@ -125,6 +130,10 @@ div#foot-nav{
 #script-list{
     list-style: none;
 }
+#pR{
+   margin-top: 30px; 
+    
+}
 /********************************************************************/
 /***********************************************************************************************************/
 
@@ -135,6 +144,7 @@ div#foot-nav{
     background-image: url("../images/church3.png");
     background-image: url("../images/36926646916_5eeef40750_o.jpg");
     background-image: url("../images/18981837903_586eeb43f2_o.jpg");
+    background-image: url("../images/20191118_191955.jpg");
     /*background-image: url("../images/church3.png"); */
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -189,6 +199,83 @@ div#foot-nav{
 
 #about-main-section{
     
+}
+#prayer-window{
+    background-color: #f3c24e;
+    background-color: #404040;
+    color: #ffffff;
+    width: 665px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 160;
+    display: none;
+    margin-left: 50px;
+    margin-top: 200px;
+    border: 1px solid #222;
+    border: 1px solid rgb(17, 16, 16);
+    border-bottom: 8px solid #800020;
+}
+#prayer-window.h1{
+    margin-left: 30px;
+    
+}
+#form{
+    margin-left: 15px;
+}
+#exampleTextarea{
+    width: 600px;
+    margin-left: ;
+}
+#contact-p1{
+    height: 780px;
+}
+#pastor-pic{
+    
+    float: left;
+    
+    
+}
+#pastor-bio{
+    
+    float: right;
+    width: 530px;
+    
+    
+    
+}
+#first-lady{
+    
+    float: left;
+    width: 530px;
+    
+}
+#first-lady-pic{
+    
+    float: right;
+}
+#vision{
+    float: left;
+    width: 600px;
+    clear: both;
+}
+#fl{
+    clear: both;
+}
+
+#div1, #div2, #div3, #div4, #contact-p1{
+    
+    margin: auto;
+    width: 100%;
+}
+#div1{
+    height: 400px;
+}
+#div2{
+   height: 800px;
+}
+#div3{
+    height: 800px;
 }
 @media screen and (max-width: 767px) {
     .responsive{

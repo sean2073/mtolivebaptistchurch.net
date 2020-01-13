@@ -31,11 +31,14 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+   
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
       integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -79,7 +82,16 @@
             
           </div>
           <div class="col-xs-11 col-sm-8 col-lg-6   ">
-              <div id="scripture">
+            <div id="prayer-request">
+<!--<i class="fas fa-pray" style="color:#f37521"></i>
+             <button style="background-color: transparent; border: 1px solid #800020; color: #fff;"> <i id="pR"  class="fas fa-pray fa-2x" style="color:#d19c3e;"></i><span>  Submit A Prayer Request</span> </button>
+             -->
+             <button id="pR" style="background-color: transparent; border: 1px solid #800020; color: #fff;"> <i   class="fas fa-pray fa-2x" style="color:#fff;"></i><span>  Submit A Prayer Request</span> </button>
+
+            
+            </div>
+              
+             <!--  <div id="scripture">
                   
                   <ul id="script-list">Matthew 22:37-40
                     <li>"Loving God" (Committment)</li>
@@ -87,7 +99,7 @@
                       <li>  "Loving Ourselves" (Character)</li>
                   </ul>
               </div>
-              
+            -->
           </div>
         </div>
 
@@ -134,10 +146,18 @@
         
                   <div class="jumbotron" style="background-color:transparent">
                     <div id="home-text">
-                      <p>
+                   <!--   <p>
                    <span>     Live the life <br> God wants for you.</span> 
                       </p>
-                      
+                    -->
+                      <div id="scripture">
+                  
+                          <ul id="script-list">Matthew 22:37-40
+                            <li>"Loving God" (Committment)</li>
+                               <li> "Loving Others" (Compassion)</li>
+                              <li>  "Loving Ourselves" (Character)</li>
+                          </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -298,8 +318,30 @@
         </div>
      </div>
 
-      
+     <div id="prayer-window">
+       <div class="title">
+         
+         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          &nbsp; &nbsp;<h1> Prayer Request</h1>
+          <hr><br>
+          <form action="" id="form">
+              <div class="form-group">
+                  <label for="exampleTextarea">You can use the box below to send the pastor your confidential prayer request.</label>
+                  <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="button" id="close" class="btn btn-secondary " data-dismiss="modal">Close</button>
+          </form>
+       </div>
+       
+
+
+     </div> 
       
     </div>
+<script src="assets/javascript/script.js"></script>
   </body>
+ 
 </html>
