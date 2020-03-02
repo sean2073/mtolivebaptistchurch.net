@@ -217,8 +217,7 @@ div#foot-nav{
     border-bottom: 8px solid #800020;
 }
 #prayer-window.h1{
-    margin-left: 30px;
-    
+    margin-left: 30px; 
 }
 #form{
     margin-left: 15px;
@@ -231,27 +230,17 @@ div#foot-nav{
     height: 780px;
 }
 #pastor-pic{
-    
-    float: left;
-    
-    
+    float: left;  
 }
 #pastor-bio{
-    
     float: right;
-    width: 530px;
-    
-    
-    
+    width: 530px;  
 }
 #first-lady{
-    
     float: left;
     width: 530px;
-    
 }
 #first-lady-pic{
-    
     float: right;
 }
 #vision{
@@ -264,18 +253,21 @@ div#foot-nav{
 }
 
 #div1, #div2, #div3, #div4, #contact-p1{
-    
     margin: auto;
     width: 100%;
 }
 #div1{
-    height: 400px;
+    height: 390px;
 }
 #div2{
    height: 800px;
 }
 #div3{
+    
     height: 800px;
+}
+#div4{
+    height: 155px;
 }
 @media screen and (max-width: 767px) {
     .responsive{
