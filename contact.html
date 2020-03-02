@@ -160,7 +160,7 @@
           <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8">
-              <form>
+              <form id="contactForm" name="contactForm" action="" method="POST">
                 <fieldset>
 
 
@@ -168,7 +168,7 @@
                     <label for="nameInput" class="col-sm-2 col-form-label lead" style="font-size:18px">Your Name</label>
                     <div class="col-sm-10">
                       <input style="background-color: #e9f1f162" type="name" class="form-control" id="nameInput"
-                        aria-describedby="nameHelp" placeholder="">
+                        aria-describedby="nameHelp" placeholder="" name="name">
                     </div>
                   </div>
                   <div class="form-group row">
@@ -176,7 +176,7 @@
                       Address</label>
                     <div class="col-sm-10">
                       <input style="background-color: #e9f1f162" type="email" class="form-control" id="emailInput"
-                        aria-describedby="emailHelp" placeholder="">
+                        aria-describedby="emailHelp" placeholder="" name="userEmail-address">
                       <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                         else.</small>
                     </div>
@@ -186,7 +186,7 @@
                       style="font-size:18px">Subject</label>
                     <div class="col-sm-10">
                       <input style="background-color: #e9f1f162" type="subject" class="form-control" id="subjectInput"
-                        aria-describedby="subjectHelp" placeholder="">
+                        aria-describedby="subjectHelp" placeholder="" name="subject">
                     </div>
                   </div>
                   <div class="form-group row">
@@ -194,12 +194,13 @@
                       Message</label>
                     <div class="col-sm-10">
                       <textarea style="background-color:#e9f1f162" class="form-control" id="messageTextarea"
-                        rows="3"></textarea>
-                      <br><br>
+                        rows="3" name="message"></textarea>
+                      <br>
+                      <div id="mail-status"></div>
                       <!-- 
                                                   <button style="background-color:#2196f3" type="submit" class="btn btn-primary">Submit</button>
                                                   -->
-                      <button type="submit" class="btn btn-primary">Submit</button>
+                      <button name="submit" type="submit" class="btn btn-primary" onClick="sendContactForm();">Submit</button>
                     </div>
                   </div>
 
@@ -226,9 +227,9 @@
             <img src="assets/images/moWordLogo.png" alt="Mt. Olive Baptist Churchs" width="210" class="responsive" />
           </div>
           <div id="social-media">
-            <img src="assets/images/fb.png" alt="facebook" srcset="" width="30px" />
-            <img src="assets/images/twitter.png" alt="twitter" width="30px" srcset="" />
-            <img src="assets/images/instagram.png" alt="instagram" srcset="" width="30px" />
+            <a href="https://www.facebook.com/pcmtolivebaptist" target="_blank"><img src="assets/images/fb.png" alt="facebook" srcset="" width="30px" /></a>
+            <!-- <img src="assets/images/twitter.png" alt="twitter" width="30px" srcset="" />
+            <img src="assets/images/instagram.png" alt="instagram" srcset="" width="30px" /> -->
           </div>
         </div>
         <div class="col-md-3 ">
@@ -283,7 +284,7 @@
         <div class="col-md-12">
           <div id="">
             <br>
-            <p class="footer-p" style="text-align: center;font-size:10px;color:#ededed;">&copy; 2019
+            <p class="footer-p" style="text-align: center;font-size:10px;color:#ededed;">&copy; 2020
               mtolivebaptistchurch.net</p>
           </div>
         </div>
@@ -314,6 +315,7 @@
 
   </div>
     <script src="assets/javascript/script.js"></script>
+    <script src="assets/javascript/sendContactForm.js"></script>
 </body>
 
 </html>
