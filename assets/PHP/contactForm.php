@@ -1,12 +1,12 @@
-<!-- 
+
     
 
 <?php
 
-// ini_set('display_errors',1);
-// error_reporting(E_ALL);
+ini_set('display_errors',1);
+ error_reporting(E_ALL);
 
-// echo "I'm in the php file.";
+ echo "I'm in the php file.";
 
 // if(isset($_POST['submit'])){
 // $to = "seanbbyfield@gmail.com";
@@ -37,8 +37,9 @@
 
 
 
-$toEmail = "seanbbyfield@gmail.com";
+$toEmail = "seanbbyfield@gmail.com, pastor@mtolivebaptistchurch.net";
     $mailHeaders = "From: " . $_POST["name"] . "<". $_POST["userEmail-address"] .">\r\n";
+    $mailHeaders .= "Reply-To: <{$_POST['userEmail-address']}>";
     if(mail($toEmail, $_POST["subject"], $_POST["message"], $mailHeaders)) {
         print "<p class='success'>Mail Sent.</p>";
     } else {
