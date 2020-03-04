@@ -10,7 +10,7 @@ function sendContactForm() {
             $("#emailInput").val()+'&subject='+
             $("#subjectInput").val()+'&message='+
             $("#messageTextarea").val(),
-            type: "POST",
+            method: "POST",
             success:function(data){
                 $("#mail-status").html(data);
                 console.log(data);

@@ -8,24 +8,60 @@ ini_set('display_errors',1);
 
  echo "I'm in the php file.";
 
-$headers = "From: pastor@mtolivebaptistchurch.net\r\n";
-$headers .= "Reply-To: {$_POST['userEmail-address']} \n";
+$headers = "From: info@mtolivebaptistchurch.net\r\n";
+$headers.= "Reply-To: {$_POST['userEmail-address']} \n";
 $headers .= "X-Mailer: PHP/".phpversion();
 $headers .= "MIME-Version: 1.0\r\n";
-$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+$headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
 
-$message = '<html><body> <h2>';
-$message .= "Name: {$_POST['name']}\r\n";
-$message .= '<br>';
-$message .= "Email Address: {$_POST['userEmail-address']} \n";
-$message .= '<br>';
-$message .= "Subject: {$_POST['subject']} \n";
-$message .= '<br>';
-$message .= "Message: {$_POST['message']} \n";
-$message .= '</h2></body></html>';
+$message = "     
+<html>
+<head></head>
+<body>
+    
+
+<h2>
+Name: {$_POST['name']} \n
+</h2>
+</body>
+</html>
+";
+$message .= "
+
+// <html>
+// <head></head>
+// <body>
+// <h2>
+Email Address: {$_POST['userEmail-address']} \n
+// </h2>
+// </body>
+// </html>
+";
+
+$message .= "
+// <html>
+// <head></head>
+// <body>
+// <h2>
+Subject: {$_POST['subject']} \n
+// </h2>
+// </body>
+// </html>
+";
+
+$message .= "
+// <html>
+// <head></head>
+// <body>
+// <h2>
+ Message: {$_POST['message']} \n
+//  </h2>
+//  </body>
+//  </html>
+ ";
 
 if(mail('seanbbyfield@gmail.com,pastor@mtolivebaptistchurch.net', 'Inquiry from mtolivebaptistchurch.net', 
-$message,$headers)){
+$message,'From: pastor@mtolivebaptistchurch.net')){
     print "<p class='success'>Mail Sent.</p>";
     } else {
         print "<p class='Error'>Problem in Sending Mail.</p>";
