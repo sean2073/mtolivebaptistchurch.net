@@ -152,7 +152,7 @@
             <i class="fas fa-phone" style="color:#f37521"></i>
             (813)754-3834 &nbsp;&nbsp;
             <i class="far fa-envelope" style="color:#f37521"></i>
-            info@mtolivebaptistchurch.net
+            <a href="mailto:info@mtolivebaptistchurch.net" target="_top">info@mtolivebaptistchurch.net</a>
           </p>
 
 
@@ -160,14 +160,16 @@
           <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8">
-              <form id="contactForm" name="contactForm" action="https://www.mtolivebaptistchurch.net/assets/PHP/contactForm.php" method="POST">
+              <!-- <form id="contactForm" name="contactForm" method="post"> -->
+                <form id="contactForm" name="contactForm" action="https://www.mtolivebaptistchurch.net/assets/PHP/contactForm.php" method="post">
+
                 <fieldset>
 
 
                   <div class="form-group row">
                     <label for="nameInput" class="col-sm-2 col-form-label lead" style="font-size:18px">Your Name</label>
                     <div class="col-sm-10">
-                      <input style="background-color: #e9f1f162, color:#f37521" type="name" class="form-control" id="nameInput"
+                      <input style="background-color: #e9f1f162" type="name" class="form-control" id="nameInput"
                         aria-describedby="nameHelp" placeholder="" name="name">
                     </div>
                   </div>
@@ -200,7 +202,8 @@
                       <!-- 
                                                   <button style="background-color:#2196f3" type="submit" class="btn btn-primary">Submit</button>
                                                   -->
-                      <button name="submit" type="submit" class="btn btn-primary" onClick="sendContactForm();">Submit</button>
+                      <button name="submit" type="submit" class="btn btn-primary " onClick="sendContactForm();">Submit</button>&nbsp;&nbsp;
+                      <button type="reset" value="reset" id="reset" class="btn btn-secondary  " data-dismiss="modal">&nbsp;Clear&nbsp; </button>
                     </div>
                   </div>
 
@@ -243,7 +246,7 @@
             <h5>Contact Us</h5>
             604 W Ball St, Plant City, FL 33563
             <br />
-            Phone: (813)754-3834 <br />Email: info@mtolivebaptistchurch.net
+            Phone: (813)754-3834 <br />Email: <a href="mailto:info@mtolivebaptistchurch.net" target="_top">info@mtolivebaptistchurch.net</a>
             <br />
           </div>
         </div>

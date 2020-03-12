@@ -305,14 +305,21 @@
          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-          &nbsp; &nbsp;<h1> Prayer Request</h1>
+          &nbsp; &nbsp;<h1 style="text-align: center;"> Prayer Request</h1>
           <hr><br>
-          <form action="" id="form">
-              <div class="form-group">
-                  <label for="exampleTextarea">You can use the box below to send the pastor your confidential prayer request.</label>
-                  <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+          <!-- <form name="prayerForm"  id="form"> -->
+          <form name="prayerForm" action="https://www.mtolivebaptistchurch.net/assets/PHP/prayerForm.php" method="POST"" id="form">
+           
+            <div class="form-group">
+                <label for="emailAddress" >Email
+                  Address</label>  <br>
+                <input  style="width: 250px;" type="email" class="form-control" id="emailAddress"
+                        aria-describedby="emailHelp" placeholder="" name="email-address">
+                <label for="exampleTextarea">You can use the box below to send the pastor your confidential prayer request.</label>
+                  <textarea style="width: 590px;" class="form-control" id="prayerMessage" rows="5"></textarea><br>
+                  <div id="prayer-status" style="width: 590px;"></div> <br><br>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button type="submit" class="btn btn-primary" onClick="sendPrayerForm();">Submit</button>
               <button type="button" id="close" class="btn btn-secondary " data-dismiss="modal">Close</button>
           </form>
        </div>
@@ -323,6 +330,7 @@
       
     </div>
 <script src="assets/javascript/script.js"></script>
+<script src="assets/javascript/sendPrayerForm.js"></script>
   </body>
  
 </html>
