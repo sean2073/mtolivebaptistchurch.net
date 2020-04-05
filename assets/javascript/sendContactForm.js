@@ -14,13 +14,15 @@ function sendContactForm() {
             $("#emailInput").val() + '&subject=' +
             $("#subjectInput").val() + '&message=' +
             $("#messageTextarea").val(),
-        method: "POST",
+        method: 'POST',
         success: function (data) {
             $("#mail-status").html(data);
+            $("form").trigger("reset");
             console.log(data);
-            console.log("Everything was successful")
+            console.log("Everything was successful");
         },
         error: function (err) {
+            $("#mail-status").html("Error Sending Emeil!");
             console.log(err);
         }
     })

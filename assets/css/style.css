@@ -230,11 +230,14 @@ div#foot-nav{
     height: 780px;
 }
 #pastor-pic{
-    float: left;  
+    /* float: left;   */
+    /* height: 100%;
+    width: 100%; */
 }
 #pastor-bio{
     float: right;
-    width: 530px;  
+    width: 530px; 
+    /* text-align: justify;  */
 }
 #first-lady{
     float: left;
@@ -243,20 +246,20 @@ div#foot-nav{
 #first-lady-pic{
     float: right;
 }
-#vision{
+/* #vision{
     float: left;
     width: 600px;
     clear: both;
-}
+} */
 #fl{
     clear: both;
 }
 
-#div1, #div2, #div3, #div4, #contact-p1{
+#div1, #div2, #div3, #div4, #contact-p1, #serve-2, #serve-3{
     margin: auto;
     width: 100%;
 }
-#div1{
+/* #div1{
     height: 390px;
 }
 #div2{
@@ -267,17 +270,28 @@ div#foot-nav{
     height: 800px;
 }
 #div4{
-    height: 155px;
-}
+    height: 355px;
+} */
 
 #serve-1{
     clear: both;
-    background-image: url("../images/Choir/20191013_214935_resized[2].jpg");
+    background-image: url("../images/Choir/20191013_214935_resized[2]_3.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    height: 400px; 
+    height: 467px; 
     width: 100%;
 }
+#serve-2{
+    height: 1000px;
+}
+#joinFB{
+    margin-left: 340px;
+}
+.responsive-slideshow{
+    /* width: 100%; */
+    max-width: 720px;
+    height: 540px;
+  }
 
 @media screen and (max-width: 767px) {
     .responsive{
@@ -296,6 +310,25 @@ div#foot-nav{
         width: 350px;
         
     }
+    /* #serve-2{
+        height: 2000px;
+    } */
+    /* #serve-1, #mid-section{
+        width: 510px;
+        height: 300px;
+    } */
+    #serve-h1{
+        font-size: 22px;
+    }
+    #joinFB{
+        margin-left: 100px;
+    }
+    .responsive-slideshow, .slideshow-container{
+        /* width: 100%; */
+        max-width: 320px;
+        height: 200px;
+        border: solid 1px  #e9f1f162";
+      }
 }
 
 @media screen and (max-width: 639px) {
@@ -316,6 +349,19 @@ div#foot-nav{
     }
     #scripture{
         font-size: 10px;
-        f
+        
     }
+    #serv2{
+        height: 2000px;
+    }
+    #joinFB{
+        margin-left: 50px;
+    }
+    .responsive-slideshow, .slideshow-container{
+        /* width: 100%; */
+        max-width: 320px;
+        height: 200px;;
+        border: solid 1px  #e9f1f162";
+      }
+
 }

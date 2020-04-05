@@ -109,7 +109,7 @@
         <div class="col-md-5"></div>
         <div class="col-md-7">
           <div id="nav">
-            <ul class="nav ">
+            <ul class="nav nav-pills">
               <li class="nav-item">
                 <a class="nav-link "  href="index.html"
                   >Home</a
@@ -124,10 +124,10 @@
                 <a class="nav-link active" href="contact.html">Contact Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link " href="give.html">Give</a>
+                <a class="nav-link disabled" href="give.html">Give</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled"  href="watch.html"
+                <a class="nav-link"  href="watch.html"
                   >Watch</a
                 >
               </li>
@@ -160,8 +160,8 @@
           <div class="row">
             <div class="col-md-2"></div>
             <div class="col-md-8">
-              <!-- <form id="contactForm" name="contactForm" method="post"> -->
-                <form id="contactForm" name="contactForm" action="https://www.mtolivebaptistchurch.net/assets/PHP/contactForm.php" method="post">
+              <form id="contactForm" name="contactForm" >
+                <!-- <form id="contactForm" name="contactForm" action="https://www.mtolivebaptistchurch.net/assets/PHP/contactForm.php" method="post"> -->
 
                 <fieldset>
 
@@ -237,7 +237,7 @@
         </div>
         <div class="col-md-3 ">
           <div id="foot-nav">
-            <h5>Our Mission</h5>
+            <h5>Our Vision  </h5>
             To be a church of Christ-like commitment, Christ-like compassion, and Christ-like character.
           </div>
         </div>
@@ -271,7 +271,7 @@
                   <ul class="nav menu" id="menu-footer-right">
                     <li><a class="nav-link menu-link" style="font-size:15px;color:white" href="about.html">About</a>
                     </li>
-                    <li><a class="nav-link menu-link" style="font-size:15px;color:white" href="give.html">Give</a>
+                    <li><a class="nav-link menu-link disabled" style="font-size:15px;color:white" href="give.html">Give</a>
                     </li>
                     <li><a class="nav-link menu-link" style="font-size:15px;color:white" href="serve.html">Serve</a>
                     </li>
@@ -300,21 +300,29 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
            <span aria-hidden="true">&times;</span>
          </button>
-         &nbsp; &nbsp;<h1> Prayer Request</h1>
+         &nbsp; &nbsp;<h1 style="text-align: center;"> Prayer Request</h1>
          <hr><br>
-         <form action="" id="form">
-             <div class="form-group">
-                 <label for="exampleTextarea">You can use the box below to send the pastor your confidential prayer request.</label>
-                 <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+         <form name="prayerForm"  id="form">
+         <!-- <form name="prayerForm" action="https://www.mtolivebaptistchurch.net/assets/PHP/prayerForm.php" method="post" id="form"> -->
+          
+           <div class="form-group">
+               <label for="emailAddress" >Email
+                 Address</label>  <br>
+               <input  style="width: 250px;" type="email" class="form-control" id="emailAddress"
+                       aria-describedby="emailHelp" placeholder="" name="email-address">
+               <label for="exampleTextarea">You can use the box below to send the pastor your confidential prayer request.</label>
+                 <textarea style="width: 590px;" class="form-control" id="prayerMessage" rows="5" placeholder="Your confidential prayer request"></textarea><br>
+                 <div id="prayer-status" style="width: 590px;"></div> <br><br>
              </div>
-             <button type="submit" class="btn btn-primary">Submit</button>
+             <button type="submit" class="btn btn-primary" onClick="sendPrayerForm();">Submit</button>
              <button type="button" id="close" class="btn btn-secondary " data-dismiss="modal">Close</button>
+             <button type="reset" value="reset" id="reset-prayer" class="btn btn-warning  " data-dismiss="modal">&nbsp;Clear&nbsp; </button>
          </form>
       </div>
       
 
 
-    </div> 
+    </div>
 
   </div>
     <script src="assets/javascript/script.js"></script>

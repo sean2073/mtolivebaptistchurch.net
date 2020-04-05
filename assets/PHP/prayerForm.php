@@ -24,8 +24,10 @@ $message .= '</h2></body></html>';
 if(mail('seanbbyfield@gmail.com,pastor@mtolivebaptistchurch.net', 'Confidential Prayer Request', 
 $message,$headers)){
     echo "<p class='success'>Mail Sent.</p>";
+    
     } else {
         echo "<p class='Error'>Problem in Sending Mail.</p>";
+       
 }
 
 

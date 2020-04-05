@@ -3,10 +3,10 @@
 
 <?php
 
-ini_set('display_errors',1);
- error_reporting(E_ALL);
+// ini_set('display_errors',1);
+//  error_reporting(E_ALL);
 
- echo "I'm in the php file.";
+  echo "I'm in the php file.";
 
 $headers = "From: pastor@mtolivebaptistchurch.net\r\n";
 $headers .= "Reply-To: {$_POST['userEmail-address']} \n";
@@ -26,9 +26,12 @@ $message .= '</h2></body></html>';
 
 if(mail('seanbbyfield@gmail.com,pastor@mtolivebaptistchurch.net', 'Inquiry from mtolivebaptistchurch.net', 
 $message,$headers)){
-    print "<p class='success'>Mail Sent.</p>";
+    // print "<p class='success'>Mail Sent.</p>";
+    // header("Location:http://www.mtolivebaptistchurch.net/contact.html/");
+        echo "Email Sent";
     } else {
-        print "<p class='Error'>Problem in Sending Mail.</p>";
+        // print "<p class='Error'>Problem in Sending Mail.</p>";
+        echo "Problem in sending email";
 }
 
 

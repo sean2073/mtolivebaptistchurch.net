@@ -9,9 +9,10 @@ function sendPrayerForm() {
     $.ajax({
         url: "https://www.mtolivebaptistchurch.net/assets/PHP/prayerForm.php",
         data: 'email=' + $("#emailAddress").val() + '&message=' + $("#prayerMessage").val(),  
-        method: "POST",
+        method: 'POST',
         success: function (data) {
             $("#prayer-status").html(data);
+            $("form").trigger("reset");
             $("#prayer-status").css({
                 "color": "red",
                 "background-color": "white"
@@ -38,7 +39,8 @@ function validateEmail() {
        // var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
         $("#prayer-status").html(" * Invalid Email Address!  *");
         $("#prayer-status").css({
-            'background-color': '#FFFFDF',
+            
+            // 'background-color': '#FFFFDF',
             'color': 'red',
             'font-weight': 'bold' });
        
