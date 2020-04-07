@@ -1,6 +1,7 @@
 html{
     width: 960px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    
     
     
 }
@@ -23,12 +24,12 @@ p{
 */
 	
 }
-.container{
+#container{
     background-color: transparent;
     width:960px;
-    /*max-width: 500px;*/
-    max-width: 500px;
-    margin: auto;
+    max-width: 960px;
+    /* max-width: 730px; */
+    margin: 0 auto;
     
    
 
@@ -141,17 +142,17 @@ div#foot-nav{
     clear: both;
     
     
-    background-image: url("../images/church3.png");
+    /* background-image: url("../images/church3.png");
     background-image: url("../images/36926646916_5eeef40750_o.jpg");
     background-image: url("../images/18981837903_586eeb43f2_o.jpg");
     background-image: url("../images/20191118_191955.jpg");
     /*background-image: url("../images/church3.png"); */
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    /* background-repeat: no-repeat;
+    background-size: 100% 100%;  */
     
-    height: 400px;
+    height: 467px;
+    /* width: 100%; */
     
-    width: 100%;
     
    /* width: 960px;*/
 }
@@ -171,7 +172,7 @@ div#foot-nav{
     
 }
 #home-p2{
-   height: 400px; 
+   height: 480px; 
    /*margin: 0;
    padding: 0; */
 }
@@ -183,7 +184,7 @@ div#foot-nav{
     color: #770f12;
     color: #4a090b;
     border: 4px solid #e1cfd8;
-    
+    height: 300px;
 }
 #home-text{
     clear: both;
@@ -226,19 +227,24 @@ div#foot-nav{
     width: 600px;
     margin-left: ;
 }
-#contact-p1{
-    height: 780px;
+#prayerMessage{
+    width: 590px;
 }
-#pastor-pic{
+#contact-p1{
+    height: 800px;
+}
+.pastorPic-responsive{
     /* float: left;   */
     /* height: 100%;
     width: 100%; */
+    max-width: 300px;
+    margin-left: 10px;
 }
-#pastor-bio{
+/* #pastor-bio{
     float: right;
     width: 530px; 
     /* text-align: justify;  */
-}
+/* } */ */
 #first-lady{
     float: left;
     width: 530px;
@@ -275,11 +281,14 @@ div#foot-nav{
 
 #serve-1{
     clear: both;
-    background-image: url("../images/Choir/20191013_214935_resized[2]_3.jpg");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    /* background-image: url("../images/Choir/20191013_214935_resized[2]_3.jpg"); */
+    /* background-repeat: no-repeat; */
+    /* background-size: 100% 100%; */
     height: 467px; 
-    width: 100%;
+    /* height: auto; */
+
+    /* width: 100%; */
+    /* border: 1px solid #000000; */
 }
 #serve-2{
     height: 1000px;
@@ -293,14 +302,14 @@ div#foot-nav{
     height: 540px;
   }
   .largePic-responsive{
-      max-width: 930px;
+      max-width: 960px;
       height: 467px;
 
   }
 
-@media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     .responsive{
-        width: 100%;
+        width: 50%;
         max-width: 310px;
         height: auto;
 
@@ -310,36 +319,88 @@ div#foot-nav{
     }
     #nav{
    
-        margin-top: 100px;
-        margin-left: 158px;
-        width: 350px;
+        margin-top: 8px;
+        margin-left: 170px;
+        width: 500px;
         
     }
     /* #serve-2{
         height: 2000px;
     } */
+    /* #mid-section{
+        height: 402px;
+    } */
+    #home-p2{
+        height: 480px;
+    }
+    #home-p3{
+        height: 300px;
+    }
+    #contact-p1{
+        height: 820px;
+    }
      #serve-1, #mid-section{
         
-        height: 260px;
+        height: 342px;
     } 
     #serve-h1{
         font-size: 22px;
+    }
+    #serve-2{
+        height: 830px;
     }
     #joinFB{
         margin-left: 100px;
     }
     .responsive-slideshow, .slideshow-container{
         /* width: 100%; */
-        max-width: 320px;
-        height: 200px;
-        border: solid 1px  #e9f1f162";
+        max-width: 400px;
+        height: 348px;
+        
       }
 	 .largePic-responsive{
-        max-width: 480px;
+        max-width: 680px;
+        /* max-width: 640px; */
         height: 267px;
-  
+        width: 100%;
     }
-}
+    html{
+        /* width: 700px; */
+        width: 650px;
+
+        margin:0 auto;
+            }
+    #container{
+        max-width: 680px;
+        /* max-width: 640px; */
+        margin: 0 auto;
+    }
+    #prayer-window{
+        width: 500px;
+    }
+    #prayerMessage{
+        width: 300px;
+    }
+    #prayer-window{
+       
+        width: 500px;
+        height: 530px;
+       
+        margin-left: 5px;
+       
+    }
+    #prayer-window.h1{
+        margin-left: 8px; 
+    }
+    .pastorPic-responsive{
+        /* float: left;   */
+        /* height: 100%;
+        width: 100%; */
+        max-width: 200px;
+    }
+    }
+
+
 
 @media screen and (max-width: 639px) {
     .responsive{
@@ -353,34 +414,79 @@ div#foot-nav{
     }
     #nav{
    
-        margin-top: 30px;
-        margin-left: 168px;
+        margin-top: 60px;
+        margin-left: 148px;
         
     }
     #scripture{
         font-size: 10px;
         
     }
-    #serv2{
-        height: 2000px;
+    #home-p2{
+        height: 480px;
+    }
+    #home-p3{
+        height: 300px;
+    }
+    #contact-p1{
+        height: 880px;
+    }
+    #serve-2{
+        height: 840px;
     }
     #joinFB{
         margin-left: 50px;
     }
     .responsive-slideshow, .slideshow-container{
         /* width: 100%; */
-        max-width: 320px;
-        height: 200px;;
-        border: solid 1px  #e9f1f162";
+        max-width: 280px;
+        height: 244px;
       }
 	.largePic-responsive{
-        max-width: 449px;
-        height: 235px;
-  
+        max-width: 580px;
+        /* max-width: 540px; */
+        height: 237px;
+        width: 100%;
     }
-    #serve-1, #mid-section{
+    #mid-section{
+        height: 292px;
+    } 
+    #serve-1 {
         /* width: 510px; */
         height: 237px;
+    }
+    html{
+        width: 600px;
+        /* width: 550px; */
+        margin:0 auto;
+            }
+    #container{
+        /* width: 580px; */
+        max-width: 580px;
+        /* max-width: 540px; */
+        margin:0 auto;
+    }
+   
+    #prayerMessage{
+        width: 200px;
+    }
+    #prayer-window{
+       
+        width: 350px;
+        height: 530px;
+       
+        margin-left: 5px;
+       
+    }
+    #prayer-window.h1{
+        margin-left: 3px; 
+    }
+    .pastorPic-responsive{
+        /* float: left;   */
+        /* height: 100%;
+        width: 100%; */
+        max-width: 150px;
+        margin-left: 15px;;
     }
 
 }

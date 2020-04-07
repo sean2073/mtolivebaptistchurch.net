@@ -74,8 +74,10 @@
     }
     @media screen and (max-width: 767px) {
         .slideshow-container{
-            max-width: 500px;
-            height: 440px;
+            /* max-width: 500px;
+            height: 440px; */
+            width: 400px;
+        height: 348px;
           }
           .dot {
             height: 8px;
@@ -87,9 +89,9 @@
     }
     @media screen and (max-width: 639px) {
         .slideshow-container{
-            max-width: 200px;
-            height: 140px;
-            border: none;
+            width: 280px;
+            height: 244px;
+            
           }
           .dot {
             height: 5px;
