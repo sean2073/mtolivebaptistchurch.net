@@ -1,10 +1,10 @@
 html{
     width: 960px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     
-   
     
- }
+    
+}
 /*  ADDING THE BELOW p TAG STYLES GOT RID OF THE GAP BETWEEN MY DIVS
 */
 p{
@@ -26,8 +26,8 @@ p{
 }
 #container{
     background-color: transparent;
-    width: 960px;
-    max-width: 930px;
+    width:960px;
+    max-width: 960px;
     /* max-width: 730px; */
     margin: 0 auto;
     
@@ -309,23 +309,19 @@ div#foot-nav{
 
   @media screen and (max-width: 767px) {
     .responsive{
-        width: 80%;
+        width: 50%;
         max-width: 310px;
         height: auto;
 
     }
-    .responsive2{
-        width: 80%;
-       
-      }
     .nav-link{
         font-size: medium;
     }
     #nav{
    
-        margin-top: 100px;
+        margin-top: 8px;
         margin-left: 170px;
-        width: 400px;
+        width: 500px;
         
     }
     /* #serve-2{
@@ -369,14 +365,14 @@ div#foot-nav{
         width: 100%;
     }
     html{
-        width: 640px;
+        /* width: 700px; */
+        width: 650px;
+
         margin:0 auto;
             }
-    
     #container{
-        
-        width: 640px;
-        max-width: 540px;
+        max-width: 680px;
+        /* max-width: 640px; */
         margin: 0 auto;
     }
     #prayer-window{
@@ -408,22 +404,17 @@ div#foot-nav{
 
 @media screen and (max-width: 639px) {
     .responsive{
-        width: 70%;
+        width: 100%;
         max-width: 210px;
         height: auto;
 
     }
-  
-    .responsive2{
-        width: 80%;
-       
-      }
     .nav-link{
         font-size: small;
     }
     #nav{
    
-        margin-top: 30px;
+        margin-top: 60px;
         margin-left: 148px;
         
     }
@@ -464,17 +455,18 @@ div#foot-nav{
         /* width: 510px; */
         height: 237px;
     }
-     html{
-        width: 500px;
+    html{
+        width: 600px;
+        /* width: 550px; */
         margin:0 auto;
             }
-    
     #container{
-        
-        width: 500px;
-        max-width: 500px;
-        margin: 0 auto;
+        /* width: 580px; */
+        max-width: 580px;
+        /* max-width: 540px; */
+        margin:0 auto;
     }
+   
     #prayerMessage{
         width: 200px;
     }
