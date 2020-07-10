@@ -1,10 +1,10 @@
 html{
     width: 960px;
-    /* margin: 0 auto; */
+    margin: 0 auto;
     
+   
     
-    
-}
+ }
 /*  ADDING THE BELOW p TAG STYLES GOT RID OF THE GAP BETWEEN MY DIVS
 */
 p{
@@ -24,10 +24,10 @@ p{
 */
 	
 }
-#container{
+.container{
     background-color: transparent;
-    width:960px;
-    max-width: 960px;
+    width: 960px;
+    max-width: 930px;
     /* max-width: 730px; */
     margin: 0 auto;
     
@@ -89,7 +89,7 @@ div#foot-nav{
     background-repeat: no-repeat;
     margin-top: 1px;
    /*width: 960px; */
-    height: 280px;
+    height: 310px;
     /* padding-bottom: 50%;
    
     
@@ -278,7 +278,9 @@ div#foot-nav{
 #div4{
     height: 355px;
 } */
-
+#section-1{
+    height: 283px;
+}
 #serve-1{
     clear: both;
     /* background-image: url("../images/Choir/20191013_214935_resized[2]_3.jpg"); */
@@ -306,14 +308,63 @@ div#foot-nav{
       height: 467px;
 
   }
+  @media (max-width: 992px) {
+    html {
+      width: 768px;
+      margin:0 auto;
+      max-width: 100%;
 
-  @media screen and (max-width: 767px) {
+
+    }
     .responsive{
-        width: 50%;
+        width: 90%;
         max-width: 310px;
         height: auto;
 
     }
+    .largePic-responsive{
+        max-width: 720px;
+        /* max-width: 640px; */
+        height: 267px;
+        width: 100%;
+    }
+    .responsive-slideshow, .slideshow-container{
+        /* width: 100%; */
+        max-width: 500px;
+        height: 375px;
+        
+      }
+    #nav{
+   
+        margin-top: 60px;
+        margin-left: 0px;
+        width: 400px;
+        
+    }
+    .pastorPic-responsive{
+        /* float: left;   */
+        /* height: 100%;
+        width: 100%; */
+        max-width: 230px;
+    }
+    #serve-1{
+        height: 347px;
+    }
+    #serve-2{
+        height: 980px;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .responsive{
+        width: 80%;
+        max-width: 310px;
+        height: auto;
+
+    }
+    .responsive2{
+        width: 80%;
+       
+      }
     .nav-link{
         font-size: medium;
     }
@@ -321,7 +372,7 @@ div#foot-nav{
    
         margin-top: 8px;
         margin-left: 170px;
-        width: 500px;
+        width: 400px;
         
     }
     /* #serve-2{
@@ -339,7 +390,10 @@ div#foot-nav{
     #contact-p1{
         height: 820px;
     }
-     #serve-1, #mid-section{
+    #serve-1{
+        height: 260px;
+    }
+     #mid-section{
         
         height: 342px;
     } 
@@ -347,7 +401,7 @@ div#foot-nav{
         font-size: 22px;
     }
     #serve-2{
-        height: 830px;
+        height: 880px;
     }
     #joinFB{
         margin-left: 100px;
@@ -358,21 +412,23 @@ div#foot-nav{
         height: 348px;
         
       }
-	 .largePic-responsive{
+      .largePic-responsive{
         max-width: 680px;
         /* max-width: 640px; */
-        height: 267px;
+        height: 342px;
         width: 100%;
     }
     html{
-        /* width: 700px; */
-        width: 650px;
-
+        width: 640px;
         margin:0 auto;
+        max-width: 100%;
+
             }
+    
     #container{
-        max-width: 680px;
-        /* max-width: 640px; */
+        
+        width: 640px;
+        max-width: 540px;
         margin: 0 auto;
     }
     #prayer-window{
@@ -404,17 +460,22 @@ div#foot-nav{
 
 @media screen and (max-width: 639px) {
     .responsive{
-        width: 100%;
+        width: 70%;
         max-width: 210px;
         height: auto;
 
     }
+  
+    .responsive2{
+        width: 80%;
+       
+      }
     .nav-link{
         font-size: small;
     }
     #nav{
-   
-        margin-top: 60px;
+        width: 280px;
+        margin-top: 30px;
         margin-left: 148px;
         
     }
@@ -429,10 +490,10 @@ div#foot-nav{
         height: 300px;
     }
     #contact-p1{
-        height: 880px;
+        height: 910px;
     }
     #serve-2{
-        height: 840px;
+        height: 900px;
     }
     #joinFB{
         margin-left: 50px;
@@ -448,25 +509,23 @@ div#foot-nav{
         height: 237px;
         width: 100%;
     }
-    #mid-section{
-        height: 292px;
-    } 
-    #serve-1 {
+    
+    #serve-1, #mid-section {
         /* width: 510px; */
         height: 237px;
     }
-    html{
-        width: 600px;
-        /* width: 550px; */
+     html{
+        width: 500px;
         margin:0 auto;
+        max-width: 100%;
             }
+    
     #container{
-        /* width: 580px; */
-        max-width: 580px;
-        /* max-width: 540px; */
-        margin:0 auto;
+        
+        width: 500px;
+        max-width: 500px;
+        margin: 0 auto;
     }
-   
     #prayerMessage{
         width: 200px;
     }
