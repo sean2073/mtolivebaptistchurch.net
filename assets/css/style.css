@@ -183,8 +183,9 @@ div#foot-nav{
     background-color: #e0d9dd ;
     color: #770f12;
     color: #4a090b;
+    /* color: #222; */
     border: 4px solid #e1cfd8;
-    height: 350px;
+    height: 590px;
 }
 #home-text{
     clear: both;
