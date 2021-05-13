@@ -386,7 +386,7 @@ div#foot-nav{
         height: 480px;
     }
     #home-p3{
-        height: 300px;
+        height:auto;
     }
     #contact-p1{
         height: 820px;
@@ -396,7 +396,8 @@ div#foot-nav{
     }
      #mid-section{
         
-        height: 342px;
+        /*height: 342px; */
+        height:auto;
     } 
     #serve-h1{
         font-size: 22px;
@@ -488,7 +489,7 @@ div#foot-nav{
         height: 480px;
     }
     #home-p3{
-        height: 300px;
+        height: autopx;
     }
     #contact-p1{
         height: 910px;
